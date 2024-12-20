@@ -1,4 +1,10 @@
-module.exports = {
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const nextJest = require('next/jest');
+
+const createJestConfig = nextJest({
+  dir: './',
+});
+module.exports = createJestConfig({
   preset: 'ts-jest',        // Tell Jest to use ts-jest preset for TypeScript
   testEnvironment: 'jsdom',  // Jest's test environment for DOM manipulation
   transform: {
@@ -11,4 +17,4 @@ module.exports = {
     "<rootDir>/setup.ts"
   ],
   testPathIgnorePatterns: ['/node_modules/', '/dist/'], // Optional: Exclude specific folders
-};
+});
