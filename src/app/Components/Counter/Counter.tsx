@@ -14,14 +14,14 @@ const Counter = () => {
       <div className="stack">
         <button
           className="stack-item"
-          data-testid="increment-btn"
+          data-testid="increment-btn1"
           onClick={increment}
         >
           Increment
         </button>
         <button
           className="stack-item"
-          data-testid="decrement-btn"
+          data-testid="decrement-btn1"
           onClick={decrement}
         >
           Decrement
