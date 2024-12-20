@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Hello from "./Components/SampleComponent/Hello";
+import Counter from "./Components/Counter/Counter";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         width={20}
         height={20}
       />
+      <Counter/>
     </div>
   );
 }

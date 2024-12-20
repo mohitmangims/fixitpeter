@@ -16,5 +16,5 @@ module.exports = createJestConfig({
   setupFilesAfterEnv: [
     "<rootDir>/setup.ts"
   ],
-  testPathIgnorePatterns: ['/node_modules/', '/dist/'], // Optional: Exclude specific folders
+  testPathIgnorePatterns: ['/node_modules/', '/dist/',"/src/app/E2ETest"], // Optional: Exclude specific folders
 });

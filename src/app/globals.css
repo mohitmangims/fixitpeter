@@ -19,3 +19,16 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+button {
+  background-color: gray;
+}
+.stack {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.stack-item {
+  display: flex;
+  gap: 1rem;
+}
